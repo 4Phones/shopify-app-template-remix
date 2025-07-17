@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "3a1ccbf1eed64166cabe5919eb9c49e6"
+application_url = "https://readings-buried-ha-issues.trycloudflare.com"
+embedded = true
+name = "4PH Platform API"
+handle = "4ph-platform-api"
+
+[build]
+include_config_on_deploy = true
+dev_store_url = "moka-it-solutions.myshopify.com"
+
+[webhooks]
+api_version = "2025-07"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+  "https://readings-buried-ha-issues.trycloudflare.com/auth/callback",
+  "https://readings-buried-ha-issues.trycloudflare.com/auth/shopify/callback",
+  "https://readings-buried-ha-issues.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
